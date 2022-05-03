@@ -1,0 +1,48 @@
+
+
+.previewtable{
+    margin-top: 20px;
+    width:80%;
+    background: #f4cace;
+    background: radial-gradient(circle, #f4cace 0%, aliceblue 100%);
+   color: black;
+   text-align: center;
+   table, th, td {
+    border: 1px solid ghostwhite;
+    padding: 10px;
+    border-collapse: collapse;
+}
+th.td{
+    font-size: 20px;
+}
+
+th.th{
+    font-size: 17px;
+}
+}
+
+@media screen and  (max-width:674px) {
+    .previewtable{
+        th.td{
+            font-size: 9px;
+        }
+        
+        th.th{
+            font-size: 13px;
+        }
+        
+    }
+}
+
+@media screen and  (max-width:359px) {
+    .previewtable{
+        th.td{
+            font-size: 8px;
+        }
+        
+        th.th{
+            font-size: 10px;
+        }
+        
+    }
+}

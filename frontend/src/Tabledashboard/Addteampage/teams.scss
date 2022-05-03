@@ -1,0 +1,98 @@
+.TeamsPage{
+  height:100%;
+  
+
+      .teampage{
+        margin-left: 10%;
+        width:80%;
+        
+   background-color: white;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   .teampage-header{
+        display: flex;
+        font-family:  'Bungee Shade', cursive; ;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #e1727d;
+        flex-direction: column;
+        padding-left: 20px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   }
+
+        .teampage-body{
+          display: flex;
+          
+          .Teaminput{
+            padding: 50px 0px 50px 50px;
+              font-weight: bold;
+              font-size: 20px;
+              width:50%;
+              display: flex;
+              flex-direction: column;
+              margin-right: 20px;
+              .input-header{
+                background-color:#e1727d ;
+                width: 300px;
+                text-align: center;
+              }
+             .team-input{
+    
+               width: 290px;
+               border:5px solid  #f4cace;
+               outline:none;
+               margin-bottom:10px;
+              
+             }
+             .team-button{
+               border-radius: 4px;
+               font-family: 'Bungee Inline', cursive;
+               font-weight:bold;
+               font-size: 16px;
+               width: 70px;
+
+             }
+          }
+        }
+      }
+   
+}
+
+
+
+
+//.teampage-header{
+//  display: flex;
+//  width: 500px;
+//  font-family:  'Bungee Shade', cursive; ;
+//  font-weight: bold;
+//  font-size: 30px;
+//  background-color: #e1727d;
+//  flex-direction: column;
+//  border-radius: 30px;
+//  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+//}
+//
+
+
+@media screen and (max-width:977px) {
+  .TeamsPage{
+.teampage{ .teampage-body{
+      flex-direction: column;
+      .Teaminput{
+        align-items: center;
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+
+      }
+  }
+  }
+}   
+}
+
+@media screen and (max-width:450px) {
+  .TeamsPage{
+.teampage{ width: 100%;
+  margin: 0;
+  }
+}   
+}

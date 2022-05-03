@@ -1,0 +1,187 @@
+
+.resultspage{
+
+ button{
+    font-family: 'Bungee Inline', cursive;
+    font-weight: bold;
+ }
+ //box-shadow: inset 0px 0px 20px 4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%); 
+    .rp-body{
+        margin-left: 10%;
+        width:80%;
+        
+   background-color: white;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   .rp-body-header{
+        display: flex;
+        font-family:  'Bungee Shade', cursive; 
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #e1727d;
+        flex-direction: column;
+        padding-left: 20px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   }
+   .rp-body-content{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     
+       .Mr-Container{
+        background-color: #fffff0;
+        width: 80%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+
+     align-items: center;
+        .Mr-text{
+            font-family:  'Bungee Shade', cursive; 
+            font-weight: bold;
+            font-size: 60px;
+            text-align: center;
+           
+           }
+       }
+     
+       button.FnS{
+            margin-top:10px;
+            background: hsl(340deg 100% 32%);
+            border-radius: 12px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline-offset: 4px;
+            
+            .front {
+                display: block;
+                padding: 12px 26px;
+                border-radius: 12px;
+                font-size: 16px;
+                background: #d94f5c;
+                color: white;
+                transform: translateY(-6px);
+                &:active {
+                    transform: translateY(-2px);
+                  }
+              }
+            
+       }
+       
+ 
+       .dummy{
+        margin-top: 20px;
+        display: flex;
+        width: 80%;
+        background-color: aliceblue;
+        flex-direction: column;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        height: 400px;
+      
+       .rp-content-text{
+        font-family:  'Bungee Shade', cursive; 
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+       }
+       .position{
+        font-family:  'Bungee Shade', cursive; 
+        background-color: #fff0f1;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+       }
+       .rpc-header{
+        font-family: 'Bungee Inline', cursive;
+        font-weight: bold;
+        font-size: 30px;
+        padding-left: 20px;
+       }
+       .rpc-form{
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-evenly;
+       
+           label{
+            font-family: 'Bungee Inline', cursive;
+            font-weight: bold;
+            font-size: 20px;
+         
+            input{
+                border:5px solid  #fff0f1;
+                outline:none;
+                margin:10px 20px 20px 5px ;
+                height: 20px;
+              
+                
+            }
+
+            select{
+                border:5px solid  #fff0f1;
+                outline:none;
+                margin:10px 20px 20px 5px ;
+                
+            }
+         
+           }
+        
+          
+       }
+       .rpc-form-button{
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        align-items: flex-end;
+        padding-bottom: 10px;
+     button.ADD{
+         font-size: 10px;
+         width: 40px;
+         margin-right: 10px;
+         
+     }
+     button.UNDO{
+         font-size: 10px;
+         width: 40px;
+     }
+    }
+   }
+    }
+}
+}
+
+
+@media screen and  (max-width:674px) {
+    .resultspage{
+        .rp-body{
+            width: 100%;
+            margin-left: 0%;
+            .rp-body-content{
+                .Mr-Container{
+                    width: 90%;
+                    .Mr-text{
+                        font-weight: bold;
+                        font-size: 40px;
+                        text-align: center;
+                    }
+                }
+                .dummy{
+                    width: 90%;
+                    .rp-content-text{
+                        font-size: 40px;
+                       }
+                }
+            }
+        }
+    } 
+}
+
+
+//#f4cace
+
+
+
+
+//  background: hsl(345deg 100% 47%);

@@ -1,0 +1,63 @@
+.showteams{
+    width: 50%;
+    padding: 15px 50px 50px 0px;
+   .showteams-header{
+    box-shadow: inset 0px 0px 20px 4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%); 
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #f4cace;
+    background: radial-gradient(circle, #f4cace 0%, aliceblue 100%);
+   
+   }
+   .showteams-body{
+     
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       label{
+        padding-left: 10px;
+           font-weight: bold;
+           background-color: #f4cace;
+           box-shadow: inset 0px 0px 20px 4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%); 
+       }
+      .deleteicon{
+          margin-left: 5px;
+          width: 70px;
+      }
+      .deleteicon > * {
+        pointer-events: none;
+      }
+       
+   }
+label:nth-child(even) {
+    background-color: #fbedef;
+  }
+
+}
+
+
+@media screen and (max-width:977px) {
+  .showteams{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:538px) {
+  .showteams{
+    width: 100%;
+    .showteams-header{
+      font-size: 25px;
+      font-weight: bold;
+     }
+     .showteams-body{
+      
+      label{
+        font-size: 15px;
+       padding-left: 10px;
+          font-weight: bold;
+          
+      }
+    }
+}
+}

@@ -1,0 +1,25 @@
+.hcpm{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .header{
+        font-family: 'Bungee Hairline', cursive;
+        padding: 20px;
+        font-size: 30px;
+        box-shadow: inset 0px 0px 20px 4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%); 
+        background-color: #fbeef0;
+        border-radius: 60px;
+        font-weight: bold;
+      }
+}
+
+
+
+@media screen and (max-width:382px) {
+    .hcpm{
+        .header{
+            font-size: 20px;
+        }
+    }
+}

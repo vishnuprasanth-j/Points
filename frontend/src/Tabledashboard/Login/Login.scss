@@ -1,0 +1,55 @@
+.loginpage{
+    font-family: 'Bungee Shade', cursive; 
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.25);
+   margin: 50px ;
+   height:  350px;
+   border-radius: 20px;
+    text{text-align: center;
+      background-color: #d94f5c;
+      border-radius: 20px;
+        font-size: 35px;
+        flex-basis: 100%;
+        flex-grow: 1;
+            }
+  
+.loginDiv{
+    flex-basis: 100%;
+    text-align: center;
+    padding-top: 50px;
+        flex-grow: 1;
+        
+      .googleLOGIN{
+        width: 200px;
+       height: 60px;
+       font-family: 'Bungee Shade', cursive; 
+       border-radius: 20px;
+     
+    }
+  span{
+      font-size: 40px;
+      padding-right: 10px;
+  }
+}
+}
+
+
+
+
+@media screen and (min-width:1028px) {
+  .loginpage{
+    margin: 100px 40%;
+  }
+}
+
+//font-family: 'Bungee Shade', cursive; 
+//display: flex;
+//flex-wrap: wrap;
+//padding: 50px;
+//box-sizing: border-box;
+//box-shadow: 0 0 25px 0 rgba(0,0,0,0.25);

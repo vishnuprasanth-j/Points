@@ -1,0 +1,36 @@
+.homepage{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight:900;
+    .homepage-body{
+        
+
+  text-align: center;
+     
+        .description{
+            font-size: 30px;
+            font-weight:900;
+            margin-bottom: 40px;
+            .description-hg{
+                font-weight:900;
+                
+                font-size: 70px;
+            }
+        }
+        .instruction {
+            display: flex;
+              align-items: center;
+              flex-direction: column;
+            .instruction-hg{
+                padding :20px;
+                 .xxx{
+                    font-family: "Bungee Shade", cursive;
+                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:"460px") {
+    
+}

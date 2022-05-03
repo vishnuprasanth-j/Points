@@ -1,0 +1,50 @@
+.table-container{
+  
+    font-family: 'Oleo Script Swash Caps', cursive;
+padding: 30px;
+border-radius: 10px;
+font-style: italic;
+
+    .os-table{
+     
+
+         thead{
+            th{
+             font-size: 20px;
+           
+         }
+        }
+         th{
+             font-size: 15px;
+             border: 1px solid black;
+         }
+    
+      
+        &.theme1{
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        &.theme2{
+       
+        }
+}
+
+}
+   
+
+@media screen and  (max-width:460px) {
+    .table-container{
+
+        .os-table{
+    thead{
+        th{
+         font-size: 15px;
+       
+     }
+    }
+     th{
+         font-size: 10px;
+         border: 1px solid black;
+     }
+    }}
+}

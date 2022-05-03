@@ -1,0 +1,24 @@
+
+.Button-container{
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    .Modal{
+        font-family: 'Bungee Inline', cursive;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;    
+        margin-top: 40px;
+    }
+}
+
+
+
+
+@media screen and (max-width:605px) {
+    .h1{
+        font-size: 30px;
+    }
+    
+}

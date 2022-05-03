@@ -1,0 +1,34 @@
+.os-page{
+    .os-page-body{
+       display: flex;
+       flex-direction: column;
+    
+        .os-tools{
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            button{
+              font-family: 'Bungee Inline', cursive;
+              font-weight: bold;
+                  margin-left: 20px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 29px;
+            }
+            select{
+              padding: 4px;
+
+            }
+        }  
+        .table-bk{
+          display:flex;
+           justify-content: center;
+           margin-bottom: 10px;
+        }      
+}
+
+}

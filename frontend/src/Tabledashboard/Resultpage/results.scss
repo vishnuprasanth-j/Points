@@ -1,0 +1,31 @@
+.rec{
+
+
+
+&.rec-arrow {
+    border-radius: 0;
+    background-color: #e1727d;
+
+    &:hover {
+        border-radius: 50%;
+        background-color: #e1727d;
+        &:enabled{
+            background-color: #e1727d;
+        }
+    }
+    &:focus:enabled {
+       
+        background-color: #e1727d;
+       
+    }
+    &:disabled{
+        visibility: hidden;
+        
+    }
+
+}
+&.rec.rec-dot {
+    display:none ;
+    
+}
+}

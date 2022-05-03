@@ -1,0 +1,18 @@
+{
+  "name": "testapbackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "google-auth-library": "^7.11.0",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}

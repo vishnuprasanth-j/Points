@@ -1,0 +1,35 @@
+
+.card-res{
+    display: flex;
+    width: 240px;
+    height: 150px;
+    border-radius: 20px;
+  
+        flex-direction: column;
+        align-items: center;
+    .match{
+        font-family: 'Bungee Hairline', cursive;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        background-color: #f4cace;
+        box-shadow: 0 0px 3px rgba(0,0,0,0.16);
+        border-radius: 10px 10px 0px 0px;
+    }
+    .cardbody{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        background-color: whitesmoke;
+        box-shadow: 0 0px 3px rgba(0,0,0,0.16);
+        border-radius: 0px  0px 10px 10px;
+        button{
+            margin: 10px;
+            font-size: 10px;
+           
+        }
+    }
+}
