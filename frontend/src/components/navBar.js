@@ -33,7 +33,7 @@ setuser(JSON.parse(localStorage.getItem('user')))
     return <div >
     
    <nav className="navbar">
-<div className='logo-container'> <li className='menu-items-logo' >THEPOINTS</li></div>
+<div className='logo-container'> <li className='menu-items-logo' >POINTS</li></div>
   <ul className={`menu ${isToggle?"menu-items-active":""}`}>
   
   <li className='menu-items' style={{animation:`${isToggle ? `navLinkfade 0.5s ease forwards ${1/7+0.5}s`: " "}`}}>  <Link to='/'  style={{textDecoration:'inherit'}}>HOME</Link></li>
