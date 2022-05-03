@@ -42,7 +42,7 @@ const Homepage=()=>{
     
     </div>
     <div className='instruction-hg'><span className='xxx'>7</span>
-    <div className='ins-text'> Navigate to "overall"  page to download the points table. </div>
+    <div className='ins-text'> Navigate to "overall"  page to download the points table </div>
     
     </div>
   </div>
