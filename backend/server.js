@@ -29,3 +29,4 @@ console.log('connected');
 )
 
 app.use('/table',require('./routes'))
+

@@ -13,7 +13,7 @@ const NavBar=({Logout,isAuthenticated})=>{
     const navcollapse=()=>{
         setisToggle(!isToggle)
     }
-   // const{isAuthenticated}= React.useContext(AuthContext)
+
    const location =useLocation()
     React.useEffect(()=>{
       console.log("location changed")
