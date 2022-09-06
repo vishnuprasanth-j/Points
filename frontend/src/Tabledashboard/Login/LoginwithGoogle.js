@@ -6,7 +6,7 @@ import{ReactComponent as Gone} from '../../assests/Glogo1.svg';
 
 function LoginwitGoogle({Login}){
   dotenv.config()
-   const  clientId=process.env.REACT_APP_GCID
+   const  clientId="230390862629-h5k19flv81511vnrfgu0jabr1f6qeip7.apps.googleusercontent.com"
    const history= useHistory()
 
    
