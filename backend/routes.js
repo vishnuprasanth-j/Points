@@ -4,13 +4,7 @@ const UM=require('./User.model')
 const Tablerouter = express.Router()
 const auth =require('./Middleware.js')
 
-//Tablerouter.route('/auth/login').post(async(req,res)=>{
-//    const sub =req.body.googleId;
-//    UM.findOne({
-//      sub
-//    })
-//    
-//})
+
 
 Tablerouter.get('/',auth,async(req,res)=>{
    try{
@@ -23,6 +17,17 @@ Tablerouter.get('/',auth,async(req,res)=>{
    }
 })
 
+Tablerouter.get('/read',async(req,res)=>{
+    try{
+  
+ 
+     res.status(200).json('/')
+    }
+    catch(err){
+     return res.status(400).json(err)
+    }
+ })
+ 
 
 Tablerouter.post('/add',auth,async(req,res)=>{
     const post = req.body;

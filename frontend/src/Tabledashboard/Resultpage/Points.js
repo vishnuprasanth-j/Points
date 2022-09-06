@@ -37,7 +37,7 @@ const Points=({props})=>{
  const[resarr,setresarr]=React.useState()
 
     const fetchData =async()=>{
-        const {data}= await axios.get(`http://localhost:8000/table/${id}`);
+        const {data}= await axios.get(`https://points44.herokuapp.com/table/${id}`);
         return {
           t:data.Teams,
           p:data.placepoints,
@@ -84,7 +84,7 @@ const Points=({props})=>{
 
    const handleSubmit=()=>
   {
-     axios.post(`http://localhost:8000/table/results/add/${id}`,selectedteams).then((res)=>{console.log("teamsaddedsuccessfulllyyyy");setres(res.data)}).catch(err=>console.log(err.data))
+     axios.post(`https://points44.herokuapp.com/table/results/add/${id}`,selectedteams).then((res)=>{console.log("teamsaddedsuccessfulllyyyy");setres(res.data)}).catch(err=>console.log(err.data))
      setteamstate(prev=>[...prev,...steam])
      setsteam([])
      setselectedteams([])

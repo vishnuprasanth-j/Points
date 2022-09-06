@@ -15,7 +15,7 @@ const Card=({iddata,arrofdata,setarrofdata,setid})=>{
       try{
         const user= JSON.parse(localStorage.getItem('user'))
         const token =user.token
-          const res=await axios.get(`http://localhost:8000/table/`, {
+          const res=await axios.get(`https://points44.herokuapp.com/table/`, {
             headers: {
               Authorization: 'Bearer ' + token //the token is a variable which holds the token
             }});
@@ -29,7 +29,7 @@ const Card=({iddata,arrofdata,setarrofdata,setid})=>{
 
   const Dropthetable=async(prop)=>{
     try{
-    await axios.delete(`http://localhost:8000/table/${prop}`);
+    await axios.delete(`https://points44.herokuapp.com/table/${prop}`);
     setid(iddata.filter(e=>e!==prop))
     const index = iddata.map(function(item) {
     return item.Id

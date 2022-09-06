@@ -17,7 +17,7 @@ const MyComponent = () => {
   const[organiser,setorganiser]=React.useState('')
   const[tourneyname,settourneyname]=React.useState('')
   const getFunc=async()=>{
-   const {data}= await axios.get(`http://localhost:8000/table/${id}`);
+   const {data}= await axios.get(`https://points44.herokuapp.com/table/${id}`);
    return   {
           matches:data.Match,
           organiser:data.organiser,

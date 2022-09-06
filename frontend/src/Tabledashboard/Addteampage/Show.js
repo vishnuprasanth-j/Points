@@ -9,7 +9,7 @@ const ShowTeams=({id,teamstate,setteamstate,idoftheteams,setidoftheteams})=>{
         try{
             console.log(id)
             setisLoading(true)
-            const res =await axios.get(`http://localhost:8000/table/${id}`);
+            const res =await axios.get(`https://points44.herokuapp.com/table/${id}`);
             setteamstate(res.data.Teams)
             setisLoading(false)
             console.log(teamstate)
@@ -24,7 +24,7 @@ const ShowTeams=({id,teamstate,setteamstate,idoftheteams,setidoftheteams})=>{
         const idofteam=e.target.id
         console.log(e.target)
         console.log(idofteam)
-        axios.delete(`http://localhost:8000/table/${id}/teams/delete/${idofteam}`).then((res)=>{setidoftheteams(prevstate=>[...prevstate,res.data._id])}).catch(err=>console.log(err))
+        axios.delete(`https://points44.herokuapp.com/table/${id}/teams/delete/${idofteam}`).then((res)=>{setidoftheteams(prevstate=>[...prevstate,res.data._id])}).catch(err=>console.log(err))
         setisLoading(false)
     }
 

@@ -84,7 +84,7 @@ const handleSubmit=async(event)=>{
   event.preventDefault();
   const user= JSON.parse(localStorage.getItem('user'))
   const token =user.token
-  await axios.post("http://localhost:8000/table/add",values, {
+  await axios.post("https://points44.herokuapp.com/table/add",values, {
     headers: {
       Authorization: 'Bearer ' + token //the token is a variable which holds the token
     }}).then(res=>setid(prevdata=>[...prevdata,res.data._id],setarrofdata(prevstate=>[...prevstate,res.data])),setshowModal(false)).catch(err=>console.log(err.data))

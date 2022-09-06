@@ -12,7 +12,7 @@ const MatchresultTable =({arr,idofMatch,setstate,match,show,setshow})=>{
     const handleDelete=(e)=>{
         setisLoading(true)
             const idofthematch=e.target.id;
-            Axios.delete(`http://localhost:8000/table/results/${id}/delete/${idofthematch}`).then(res=>{console.log(res.data);setstate(res.data)}).catch(err=>console.error(err))
+            Axios.delete(`https://points44.herokuapp.com/table/results/${id}/delete/${idofthematch}`).then(res=>{console.log(res.data);setstate(res.data)}).catch(err=>console.error(err))
             setshow()
         setisLoading(false)
         setisShow(true)

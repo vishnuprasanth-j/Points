@@ -16,7 +16,7 @@ const  TeamsShow=()=>{
   const[tourneyname,settourneyname]=React.useState('')
 
     const getFunc=async()=>{
-        const {data}= await axios.get(`http://localhost:8000/table/${id}`);
+        const {data}= await axios.get(`https://points44.herokuapp.com/table/${id}`);
          return {
                organiser:data.organiser,
                tourneyname:data.tourneyname
@@ -41,7 +41,7 @@ const  TeamsShow=()=>{
       }
       else{
         e.preventDefault()
-        axios.post(`http://localhost:8000/table/teams/add/${id}`,Teamss).then((res)=>(setidoftheteams(prevstate=>[...prevstate,res.data._id]),console.log("teamsaddedsuccessfulllyyyy"))).catch(err=>console.log(err.data))
+        axios.post(`https://points44.herokuapp.com/table/teams/add/${id}`,Teamss).then((res)=>(setidoftheteams(prevstate=>[...prevstate,res.data._id]),console.log("teamsaddedsuccessfulllyyyy"))).catch(err=>console.log(err.data))
         setTeamss({Teams:""}) 
 }
       }

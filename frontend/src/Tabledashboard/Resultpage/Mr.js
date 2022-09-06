@@ -15,7 +15,7 @@ const Matchresults=({data,setdummy})=>{
      React.useEffect(()=>{
        
         console.log("opopop")
-        Axios.get(`http://localhost:8000/table/results/get/${id}`).then(res=>{setstate(res.data)}).catch(err=>console.log(err))
+        Axios.get(`https://points44.herokuapp.com/table/results/get/${id}`).then(res=>{setstate(res.data)}).catch(err=>console.log(err))
         console.log(state)
 
          
